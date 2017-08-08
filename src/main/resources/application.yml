@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/bbs?useSSL=false&serverTimezone=UTC
+    username: root
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.MySQLDialect
+    generate-ddl: true
+  thymeleaf:
+    mode: HTML5
+  data:
+      solr:
+        repositories:
+          enabled: true
+        host: http://localhost:8982/solr/demo
